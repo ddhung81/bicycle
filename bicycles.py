@@ -1,3 +1,11 @@
+#Customers nameFundBuy----------------------------------------
+class Customer:
+
+    def __init__(self, name, fund):
+
+        self.name = name
+        self.fund = fund
+        self.bike = None
 #Bicycle modelWeightCost------------------------------------------
 class Bicycle:
 
@@ -45,11 +53,4 @@ class BikeShop:
         customer.fund -= bike.price
         self.profit += bike.markup
         del self.inventory[bike.model]
-#Customers nameFundBuy----------------------------------------
-class Customer:
 
-    def __init__(self, name, fund):
-
-        self.name = name
-        self.fund = fund
-        self.bike = None
